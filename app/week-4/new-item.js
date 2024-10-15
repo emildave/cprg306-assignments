@@ -14,24 +14,10 @@ export default function NewItem() {
     };
 
     return (
-    <div className="flex gap-3 justify-around items-center min-w-[10%] max-w-[25%] bg-primary overflow-clip">
-      <button
-        className="flex justify-center px-5 py-2 bg-secondary text-7xl min-w-[5vw] min-h-[5vw]"
-        onClick={decrement}
-      >
-        -
-      </button>
-
-      <div className="w-full text-center bg-primary text-text font-bold text-xl">
-        {quantity}
+      <div className="flex justify-center items-center space-x-2 bg-violet-200 p-3 rounded-xl w-min h-min">
+          <p className="mb-0 text-violet-900 text-xl">{quantity}</p>
+          <button className={`px-4 py-2 rounded-xl h-full  ${quantity === 1 ? "bg-violet-100" : "bg-violet-400 && hover:bg-violet-500"} text-violet-900`}type="button"onClick={decrement}>-</button>
+          <button className={`px-4 py-2 rounded-xl h-full ${quantity === 20 ? "bg-violet-100" : "bg-violet-400 && hover:bg-violet-500"} text-violet-900`}type="button"onClick={increment}>+</button>
       </div>
-      
-      <button
-        className="flex justify-center px-5 py-2 bg-secondary text-7xl min-w-[5vw] min-h-[5vw]"
-        onClick={increment}
-      >
-        +
-      </button>
-    </div>
     );
 }

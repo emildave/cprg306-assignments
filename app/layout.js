@@ -9,10 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-background flex justify-center pt-20`}>
+      <body className={`bg-purple-100 flex justify-center pt-20`}>
         <Link
           href={"/"}
-          className="absolute font-bold text-3xl top-2 left-2 text-text px-3 py-2 hover:bg-secondary"
+          className="absolute font-bold text-3xl top-2 left-2 text-violet-900 px-3 py-2 hover:bg-violet-300 rounded-xl"
           >
           HOME
         </Link>

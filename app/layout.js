@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 export const metadata = {
   title: "Shopping List",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
           href={"/"}
           className="absolute font-bold text-3xl top-2 left-2 text-violet-900 px-3 py-2 hover:bg-violet-300 rounded-xl"
           >
-          HOME
+          <FaHome />
         </Link>
         <div className="w-[80%]">{children}</div>
       </body>

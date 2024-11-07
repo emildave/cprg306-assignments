@@ -29,7 +29,8 @@ export default function Page() {
             <h1 className='text-2xl font-bold text-violet-900 mb-4'>Shopping List</h1>
             <div className="flex w-full justify-center space-x-4">
                 <div className="flex-1">
-                    <ItemList items={items} onItemSelect={handleItemSelect} selectedItemName={selectedItemName} />
+                    <ItemList items={items} onItemSelect={handleItemSelect} />
+                    
                 </div>
                 <div className="flex-1">
                     <NewItem onAddItem={handleAddItem} />

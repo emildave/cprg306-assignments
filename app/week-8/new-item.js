@@ -37,7 +37,7 @@ export default function NewItem({ onAddItem }) {
       <form className="w-full max-w-xs mx-auto space-y-4" onSubmit={(event) => handleSubmit(event)}>
         <label className="w-full">
           <input
-            className="text-violet-900 p-2 w-full h-12 rounded-xl bg-primary bg-violet-200"
+            className="text-violet-900 p-2 w-full h-12 rounded-xl bg-violet-200"
             placeholder="Item Name"
             id="name"
             type="text"
